@@ -8,10 +8,10 @@
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/abhas.png": "/static/media/abhas.b6974dd5.png",
-  "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.af7ae505.woff2",
-  "static/css/main.4a30fdf0.chunk.css.map": "/static/css/main.4a30fdf0.chunk.css.map",
+  "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.674f50d2.eot",
   "static/css/1.a40b7e5b.chunk.css.map": "/static/css/1.a40b7e5b.chunk.css.map",
+  "static/css/main.4a30fdf0.chunk.css.map": "/static/css/main.4a30fdf0.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.7f737743f1526e2450783e42fc7e9d76.js": "/precache-manifest.7f737743f1526e2450783e42fc7e9d76.js",
+  "precache-manifest.cb52d7c406009738eb887e164e516353.js": "/precache-manifest.cb52d7c406009738eb887e164e516353.js",
   "service-worker.js": "/service-worker.js"
 }
