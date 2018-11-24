@@ -3,8 +3,8 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .App-header {
@@ -14,19 +14,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 30px;
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first-name, .last-name {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.first-name {
+  font-weight: 200;
+  margin-right: 3px;
+}
+
+.last-name {
+  font-weight: 700;
+}
+
+.name-container {
+  margin-bottom: 30px;
+}
+
+.social-container {
+  margin: 30px;
+  font-size: 30px;
 }
