@@ -6,7 +6,7 @@ const socialIcons = [
   { classname: 'linkedin-square', url: 'https://www.linkedin.com/in/mittalabhas1/' },
   { classname: 'github-square', url: 'https://github.com/mittalabhas1/' },
   { classname: 'twitter-square', url: 'https://twitter.com/abhas_4/' },
-  { classname: 'envelope-square', url: 'mailto:mittalabhas1@gmail.com', target: '_self' },
+  { classname: 'envelope-square', url: 'mailto:hello@abhasmittal.com', target: '_self' },
 ];
 
 class App extends Component {
