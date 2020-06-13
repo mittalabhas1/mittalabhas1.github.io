@@ -10,8 +10,8 @@ const icons = [
   },
   {
     iconClass: 'fas fa-envelope',
-    text: 'hello@abhasmittal.com',
-    href: 'mailto:hello@abhasmittal.com',
+    text: 'mittalabhas1@gmail.com',
+    href: 'mailto:mittalabhas1@gmail.com',
     target: '_self'
   },
   {
