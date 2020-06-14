@@ -4,45 +4,59 @@ import { Link } from 'react-router-dom';
 import abhas from '../abhas.png';
 import './index.scss';
 
-const socialIcons = [
+export const socialContacts = [
   {
     classname: 'fab fa-linkedin-in',
-    url: '//www.linkedin.com/in/mittalabhas1/'
+    url: '//www.linkedin.com/in/mittalabhas1/',
+    title: 'LinkedIn'
   },
-  { classname: 'fab fa-github', url: '//github.com/mittalabhas1/' },
-  { classname: 'fab fa-twitter', url: '//twitter.com/abhas_4/' },
+  {
+    classname: 'fab fa-github',
+    url: '//github.com/mittalabhas1/',
+    title: 'Github'
+  },
+  {
+    classname: 'fab fa-twitter',
+    url: '//twitter.com/abhas_4/',
+    title: 'Twitter'
+  },
   {
     classname: 'fas fa-envelope-open-text',
-    url: 'mailto:mittalabhas1@gmail.com'
+    url: 'mailto:mittalabhas1@gmail.com',
+    title: 'Email'
   },
   {
     classname: 'fas fa-file-contract',
-    url: `${process.env.PUBLIC_URL}/Resume_Abhas_Mittal.pdf`
+    url: `${process.env.PUBLIC_URL}/Resume_Abhas_Mittal.pdf`,
+    title: 'Resume'
   },
   {
     classname: 'fas fa-blog',
-    url: '/blog',
-    target: '_self'
+    url: '/blog/stories',
+    target: '_self',
+    title: 'Stories'
   }
 ];
 
 class Home extends Component {
-  renderSocialIcon = (icon, i) => {
-    const element = <i className={icon.classname} />;
+  renderSocialIcon = (contact, i) => {
+    const element = <i className={contact.classname} />;
     const commonProps = {
-      className: "home-link",
-      target: icon.target || '_blank',
-      rel: "noopener noreferrer"
+      className: 'home-link',
+      target: contact.target || '_blank',
+      rel: 'noopener noreferrer'
     };
     return (
-      <li key={`social-icon-${i}`} onClick={icon.onClick || (() => {})}>
-        {
-          icon.url.startsWith('mailto:') ? (
-            <a {...commonProps} href={icon.url}>{element}</a>
-          ) : (
-            <Link {...commonProps} to={icon.url}>{element}</Link>
-          )
-        }
+      <li key={`social-icon-${i}`} onClick={contact.onClick || (() => {})}>
+        {contact.url.startsWith('mailto:') ? (
+          <a {...commonProps} href={contact.url}>
+            {element}
+          </a>
+        ) : (
+          <Link {...commonProps} to={contact.url}>
+            {element}
+          </Link>
+        )}
       </li>
     );
   };
@@ -83,7 +97,7 @@ class Home extends Component {
           </div>
 
           <ul className="profile-social-links">
-            {socialIcons.map(this.renderSocialIcon)}
+            {socialContacts.map(this.renderSocialIcon)}
           </ul>
         </aside>
       </div>

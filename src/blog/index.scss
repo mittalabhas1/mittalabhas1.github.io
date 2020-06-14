@@ -1,7 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
-#body {
+#stories-page {
   background: white;
-  padding: 0 10%;
+  padding: 50px 10%;
   overflow-y: auto;
+
+  .header-container {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8dfdf;
+  }
+
+  .footer-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e8dfdf;
+
+    a {
+      &:not(:last-child):after {
+        content: '•';
+        margin: 0 5px;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .logo {
+    width: 60px;
+    margin-right: 20px;
+  }
+
+  .blog-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .blog-heading {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+    a {
+      border-bottom: 1px solid;
+      padding-bottom: 1px;
+    }
+  }
+
+  .blog-subheading {
+    color: #9c9191;
+  }
 }

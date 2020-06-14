@@ -9,7 +9,7 @@ import Education from './Education';
 import Certification from './Certification';
 import Skills from './Skills';
 
-import './index.css';
+import './index.scss';
 
 export default class ResumeIndex extends Component {
   displayName = 'ResumeIndex';
@@ -18,7 +18,7 @@ export default class ResumeIndex extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="resume-container">
         <Header />
         <div className="body">
           <div className="left-container">

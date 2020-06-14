@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <HashRouter basename={'/'}>
         <Switch>
-          <Route exact path="/blog">
+          <Route exact path="/blog/stories">
             <Blog />
           </Route>
           <Route exact path="/">
