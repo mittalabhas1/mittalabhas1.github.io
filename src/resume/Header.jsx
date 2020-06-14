@@ -6,7 +6,9 @@ import React, { Component } from 'react';
 const icons = [
   {
     iconClass: 'fas fa-phone-alt',
-    text: '+91 82660 63709'
+    text: '+91 82660 63709',
+    href: 'tel:+918266063709',
+    target: '_self'
   },
   {
     iconClass: 'fas fa-envelope',

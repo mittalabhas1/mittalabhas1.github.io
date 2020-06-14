@@ -105,7 +105,7 @@ a {
 
 .section-heading {
   border-bottom: 1px solid;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
   padding-bottom: 5px;
   color: rgb(106, 113, 130);
@@ -131,6 +131,10 @@ ul ul {
 }
 
 .section {
+  margin-bottom: 20px;
+}
+
+.work-experience-section {
   margin-bottom: 10px;
 }
 

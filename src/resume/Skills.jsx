@@ -14,12 +14,16 @@ const skills = [
   'Ruby-on-Rails',
   'Python',
   'Django',
+  'Selenium',
   'PHP',
   'Postgres',
-  'AWS',
+  'Amazon Web Services (AWS)',
   'ElasticBeanStalk',
   'SQS',
-  'S3'
+  'S3',
+  'HTML5',
+  'CSS3',
+  'Design Systems'
 ];
 
 export default class Skills extends Component {
