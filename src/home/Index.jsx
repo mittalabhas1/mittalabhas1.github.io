@@ -20,6 +20,10 @@ const socialIcons = [
     onClick: () =>
       window.ChatGen &&
       window.ChatGen.startInteraction({ interactionId: 632909 })
+  },
+  {
+    classname: 'fas fa-file-contract',
+    url: `${process.env.PUBLIC_URL}/Resume_Abhas_Mittal.pdf`
   }
 ];
 
@@ -41,7 +45,7 @@ class Home extends Component {
   render() {
     return (
       // Design Credits: https://codepen.io/Mestika/pen/KVXVWE
-      // Flag Credits: https://code.sololearn.com/WrMgz6S4e1Zt/#html
+      // Indian Flag Credits: https://code.sololearn.com/WrMgz6S4e1Zt/#html
       <div id="wrapper">
         <aside className="profile-card">
           <header>

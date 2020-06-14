@@ -272,7 +272,7 @@ p {
   margin: -5px 0 0 0;
   padding: 0;
   float: left;
-  width: 20%;
+  width: 16.66%;
   text-align: center;
 }
 
@@ -291,7 +291,7 @@ p {
 .profile-social-links li a i {
   position: relative;
   z-index: 1;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .profile-social-links li a img,
