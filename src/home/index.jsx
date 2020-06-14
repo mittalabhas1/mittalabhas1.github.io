@@ -1,44 +1,48 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import abhas from '../abhas.png';
-import './Index.css';
+import './index.scss';
 
 const socialIcons = [
   {
     classname: 'fab fa-linkedin-in',
-    url: 'https://www.linkedin.com/in/mittalabhas1/'
+    url: '//www.linkedin.com/in/mittalabhas1/'
   },
-  { classname: 'fab fa-github', url: 'https://github.com/mittalabhas1/' },
-  { classname: 'fab fa-twitter', url: 'https://twitter.com/abhas_4/' },
+  { classname: 'fab fa-github', url: '//github.com/mittalabhas1/' },
+  { classname: 'fab fa-twitter', url: '//twitter.com/abhas_4/' },
   {
     classname: 'fas fa-envelope-open-text',
-    url: 'mailto:mittalabhas1@gmail.com',
-    target: '_self'
-  },
-  {
-    classname: 'fas fa-comment',
-    onClick: () =>
-      window.ChatGen &&
-      window.ChatGen.startInteraction({ interactionId: 632909 })
+    url: 'mailto:mittalabhas1@gmail.com'
   },
   {
     classname: 'fas fa-file-contract',
     url: `${process.env.PUBLIC_URL}/Resume_Abhas_Mittal.pdf`
+  },
+  {
+    classname: 'fas fa-blog',
+    url: '/blog',
+    target: '_self'
   }
 ];
 
 class Home extends Component {
   renderSocialIcon = (icon, i) => {
+    const element = <i className={icon.classname} />;
+    const commonProps = {
+      className: "home-link",
+      target: icon.target || '_blank',
+      rel: "noopener noreferrer"
+    };
     return (
       <li key={`social-icon-${i}`} onClick={icon.onClick || (() => {})}>
-        <a
-          className="home-link"
-          href={icon.url}
-          target={icon.target || '_blank'}
-          rel="noopener noreferrer"
-        >
-          <i className={`${icon.classname}`} />
-        </a>
+        {
+          icon.url.startsWith('mailto:') ? (
+            <a {...commonProps} href={icon.url}>{element}</a>
+          ) : (
+            <Link {...commonProps} to={icon.url}>{element}</Link>
+          )
+        }
       </li>
     );
   };

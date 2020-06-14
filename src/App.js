@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 
-import Home from './home/Index';
-import Resume from './resume/Index';
+import Home from './home';
+import Blog from './blog';
+import Resume from './resume';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter basename={'/'}>
         <Switch>
+          <Route exact path="/blog">
+            <Blog />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
@@ -19,7 +23,7 @@ class App extends Component {
             <Redirect to="/" />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

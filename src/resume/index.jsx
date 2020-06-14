@@ -9,7 +9,7 @@ import Education from './Education';
 import Certification from './Certification';
 import Skills from './Skills';
 
-import './Index.css';
+import './index.css';
 
 export default class ResumeIndex extends Component {
   displayName = 'ResumeIndex';

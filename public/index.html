@@ -29,6 +29,7 @@
       'use strict';
       !(function() {
         if (!(window.ChatGen || []).loaded) {
+        setTimeout(() => {
           var t = document.createElement('script');
           (t.type = 'text/javascript'),
             (t.async = !0),
@@ -38,6 +39,7 @@
             (t.onload = function() {
               ChatGen.init({ widget_key: 'LAAZjU7C' });
             });
+        }, 7000); // Load after 7 secs
         }
       })();
     </script>
