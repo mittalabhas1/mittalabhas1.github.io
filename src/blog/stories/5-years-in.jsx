@@ -92,6 +92,6 @@ export const content = [
     <img src={generateImageURL('flattie.jpg', slug)} alt={'Flatties'} />
     <small>Noida Flatmates</small>
   </div>,
-  'Thanks to my parents, my younger brother (Prayas) and Aditi (who also edited this blog post) who stood beside me, always!',
+  'Thanks to my parents, my younger brother (Prayas) and Aditi (who also edited this post) who stood beside me, always!',
   '- ABM'
 ];
