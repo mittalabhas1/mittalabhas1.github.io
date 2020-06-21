@@ -18,6 +18,10 @@
       line-height: 32px;
       font-size: 21px;
 
+      @media (max-width: 1000px) {
+        font-size: 19px;
+      }
+
       img {
         width: 100%;
         border-radius: 5px;
