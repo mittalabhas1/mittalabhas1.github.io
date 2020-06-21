@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Home from './home';
 import Stories from './blog';
 import Resume from './resume';
+import ThirdParty from './ThirdParty';
 
 class App extends Component {
+  componentDidMount() {
+    ThirdParty();
+  }
+
   render() {
     return (
-      <HashRouter basename="/">
+      <BrowserRouter>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -23,7 +28,7 @@ class App extends Component {
             <Redirect to="/" />
           </Route>
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
