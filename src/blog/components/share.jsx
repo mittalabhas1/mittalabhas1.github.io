@@ -8,7 +8,7 @@ const shareSites = (title, url) => [
     anchorClass: 'twitter',
     iconClass: 'fab fa-twitter',
     generateURL: () => {
-      return `//twitter.com/share?url=${url}&text=${title}`;
+      return `//twitter.com/intent/tweet?text=${title} by @abhas_4&url=${url}`;
     }
   },
   {
@@ -22,7 +22,7 @@ const shareSites = (title, url) => [
     anchorClass: 'email',
     iconClass: 'fas fa-envelope-open-text',
     generateURL: () => {
-      return `mailto:?subject=${title}&body=Check out this article I found on the Stories: ${url}`;
+      return `mailto:?subject=${title}&body=Check out this article by Abhas Mittal I found: ${url}`;
     }
   }
 ];
@@ -40,8 +40,8 @@ class Share extends Component {
 
   render() {
     const sites = shareSites(
-      `${this.props.title} via Stories`,
-      window ? window.location.href : 'https://abhasmittal.com'
+      `${this.props.title}`,
+      'https://abhasmittal.com'
     );
     const style = { flexDirection: this.props.direction };
     if (this.props.direction === 'row') {
