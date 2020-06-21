@@ -47,7 +47,7 @@ class Story extends Component {
         <div className="share-buttons-desktop">
           <Share title={title} />
         </div>
-        <div>
+        <div style={{ width: '100%' }}>
           <div>
             <h1>{title}</h1>
             <div>

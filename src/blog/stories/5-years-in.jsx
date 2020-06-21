@@ -296,7 +296,7 @@ export const content = [
     target="_blank"
     rel="noreferrer noopener"
   >
-    https://www.flyhomes.com/blog/meet-flyhomie-abhas/
+    Flyhomes Blog
   </a> ;) )</React.Fragment>,
   '- ABM'
 ];
