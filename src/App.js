@@ -15,14 +15,14 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
           <Route path="/blog">
             <Stories />
           </Route>
           <Route exact path="/resume">
             <Resume />
+          </Route>
+          <Route exact path="/">
+            <Home />
           </Route>
           <Route path="*">
             <Redirect to="/" />

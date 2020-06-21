@@ -17,8 +17,8 @@ export default {
 };
 
 export const content = [
-  'Continuing with various firsts of my life in this lockdown that even includes making samosas, I am overwhelmed to finally introduce you to my first blog post. I have been thinking about the topic of my first blog for a while now. Earlier this week, a LinkedIn notification popped up congratulating me on my 5th work anniversary. At that moment, I couldn’t believe the fact that I have been part of this industry for so long. Feeling nostalgic, the memory lane took me to my sophomore year at IIT Roorkee where it all began. What initially was my inquisitiveness and inclination towards coding, soon transformed into my passion and a definitive career choice. Just thought to pen down this exciting journey as my first blog post and say thanks to everyone without whom this wouldn’t have been possible!',
-  "In 2013 (sophomore year), I decided to take up an internship in web development overlooking the next best options of playing cricket and watching football all summer. My offer letter said and I quote: “We are a budding start-up, you may be required to work a few extra hours a couple of times in a week”. I felt excited and anxious at the same time! Interestingly, my first stint involved developing an e-commerce website, vrety.com (non-functional now), using Magento. I learned CSS, jQuery and PHP that summer. My initial apprehensions about long work hours turned out to be a great learning experience. To my surprise, I was engaged in the process to an extent that I didn't realise, was spending around 16 hours everyday throughout 45 days of my internship. This stint was unique in its own way, not everyday you hear about people learning to develop the web at a “lingerie store”!",
+  (<React.Fragment>Continuing with various firsts of my life in this lockdown that even includes making samosas, I am overwhelmed to finally introduce you to my first blog post. I have been thinking about the topic of my first blog for a while now. Earlier this week, a LinkedIn notification popped up congratulating me on my 5<sup>th</sup> work anniversary. At that moment, I couldn’t believe the fact that I have been part of this industry for so long. Feeling nostalgic, the memory lane took me to my sophomore year at IIT Roorkee where it all began. What initially was my inquisitiveness and inclination towards coding, soon transformed into my passion and a definitive career choice. Just thought to pen down this exciting journey as my first blog post and say thanks to everyone without whom this wouldn’t have been possible!</React.Fragment>),
+  "In 2013 (sophomore year), I decided to take up an internship in web development overlooking the next best options of playing cricket and watching football all summer. My offer letter mentioned and I quote: “We are a budding start-up, you may be required to work a few extra hours a couple of times in a week”. I felt excited and anxious at the same time! Interestingly, my first stint involved developing an e-commerce website, vrety.com (non-functional now), using Magento. I learned CSS, jQuery and PHP that summer. My initial apprehensions about long work hours turned out to be a great learning experience. To my surprise, I was engaged in the process to an extent that I didn't realise, was spending around 16 hours everyday throughout 45 days of my internship. This stint was unique in its own way, not everyday you hear about people learning to develop the web at a “lingerie store”!",
   <div>
     <div
       className="image-wrapper right"
@@ -291,5 +291,12 @@ export const content = [
     </a>{' '}
     who stood beside me, always!
   </React.Fragment>,
+  <React.Fragment>(PS: You can read more about me at <a
+    href="https://www.flyhomes.com/blog/meet-flyhomie-abhas/"
+    target="_blank"
+    rel="noreferrer noopener"
+  >
+    https://www.flyhomes.com/blog/meet-flyhomie-abhas/
+  </a> ;) )</React.Fragment>,
   '- ABM'
 ];

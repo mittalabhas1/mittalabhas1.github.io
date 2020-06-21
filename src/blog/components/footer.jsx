@@ -10,7 +10,7 @@ class Footer extends Component {
       <div className="footer-container">
         {socialContacts.slice(0, 3).map(contact => {
           return (
-            <a href={contact.url} target="_blank" rel="noopener noreferrer">
+            <a href={contact.url} target="_blank" rel="noopener noreferrer" key={`footer-${contact.title}`}>
               {contact.title}
             </a>
           );

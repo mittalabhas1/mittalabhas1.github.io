@@ -66,8 +66,8 @@ class Story extends Component {
                 slug={slug}
               />
             </div>
-            {data.map(datum => {
-              return <p>{datum}</p>;
+            {data.map((datum, idx) => {
+              return <div className="story-block" key={`story-block-${slug}-${idx}`}>{datum}</div>;
             })}
           </div>
         </div>

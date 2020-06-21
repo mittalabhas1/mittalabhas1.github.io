@@ -61,6 +61,7 @@ class Share extends Component {
               href={site.generateURL()}
               target="_blank"
               rel="noopener noreferrer"
+              key={`share-${this.props.direction}-${site.anchorClass}`}
             >
               <i className={site.iconClass} />
             </a>

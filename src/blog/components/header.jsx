@@ -5,7 +5,6 @@ import '../index.scss';
 
 class Header extends Component {
   render() {
-    console.log(this.props.match);
     return (
       <div className="header-container">
         {/*<h1><Link to={'/blog'}>Stories</Link></h1>*/}

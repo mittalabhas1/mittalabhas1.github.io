@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 
 import './card.scss';
 
-class StoryCard extends Component {
+class StoryImage extends Component {
   static propTypes = {
     coverImage: PropTypes.string,
-    imgCredits: PropTypes.string,
+    imgCredits: PropTypes.shape({
+      link: PropTypes.string,
+      title: PropTypes.string
+    }),
     renderAsBg: PropTypes.bool
   };
 
@@ -42,4 +45,4 @@ class StoryCard extends Component {
   }
 }
 
-export default StoryCard;
+export default StoryImage;

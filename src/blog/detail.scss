@@ -8,7 +8,11 @@
   }
 
   .story-content {
-    p {
+    .story-block {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      text-align: justify;
       margin: 20px 0;
       letter-spacing: 0.011rem;
       line-height: 32px;
@@ -108,4 +112,3 @@
     display: none
   }
 }
-

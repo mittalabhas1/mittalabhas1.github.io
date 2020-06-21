@@ -10,7 +10,10 @@ class StoryCard extends Component {
     title: PropTypes.string,
     details: PropTypes.string,
     coverImage: PropTypes.string,
-    imgCredits: PropTypes.string,
+    imgCredits: PropTypes.shape({
+      link: PropTypes.string,
+      title: PropTypes.string
+    }),
     slug: PropTypes.string
   };
 
