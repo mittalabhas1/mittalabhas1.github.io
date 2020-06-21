@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Helmet from "react-helmet";
 import { withRouter } from 'react-router-dom';
 
 import Image from './components/image';
@@ -24,12 +25,25 @@ class Story extends Component {
 
   render() {
     if (!this.state.story) return null;
-    const { title, coverImage, imgCredits, slug, publishDate } = this.state.story;
+    const { title, coverImage, imgCredits, slug, publishDate, details } = this.state.story;
 
     const data = require(`./stories/${slug}.jsx`).content;
 
+    const helmetTitle = `${title} | Abhas Mittal`;
+
     return (
       <div id="story-page">
+        <Helmet>
+          <title>{helmetTitle}</title>
+          <meta name="twitter:title" content={helmetTitle} />
+          <meta name="og:title" content={helmetTitle} />
+          <meta property="og:image" content={coverImage} />
+          <meta name="twitter:image" content={coverImage} />
+          <meta name="description" content={details} />
+          <meta name="twitter:description" content={details} />
+          <meta property="og:description" content={details} />
+          <link rel="canonical" href={`https://abhasmittal.com/stories/${slug}`} />
+        </Helmet>
         <div className="share-buttons-desktop">
           <Share title={title} />
         </div>
