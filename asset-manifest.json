@@ -1,17 +1,17 @@
 {
   "main.css": "/static/css/main.39da9b2c.chunk.css",
-  "main.js": "/static/js/main.37ac9fe0.chunk.js",
-  "main.js.map": "/static/js/main.37ac9fe0.chunk.js.map",
+  "main.js": "/static/js/main.c1a4e78d.chunk.js",
+  "main.js.map": "/static/js/main.c1a4e78d.chunk.js.map",
   "static/css/1.2f15472e.chunk.css": "/static/css/1.2f15472e.chunk.css",
   "static/js/1.85b03182.chunk.js": "/static/js/1.85b03182.chunk.js",
   "static/js/1.85b03182.chunk.js.map": "/static/js/1.85b03182.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/abhas.png": "/static/media/abhas.b6974dd5.png",
-  "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.af7ae505.woff2",
-  "static/css/main.39da9b2c.chunk.css.map": "/static/css/main.39da9b2c.chunk.css.map",
+  "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.b06871f2.ttf",
   "static/css/1.2f15472e.chunk.css.map": "/static/css/1.2f15472e.chunk.css.map",
+  "static/css/main.39da9b2c.chunk.css.map": "/static/css/main.39da9b2c.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.609019f945f178c67b1c33921138653e.js": "/precache-manifest.609019f945f178c67b1c33921138653e.js",
+  "precache-manifest.58f029edd533c528a8a4f44f17e4d853.js": "/precache-manifest.58f029edd533c528a8a4f44f17e4d853.js",
   "service-worker.js": "/service-worker.js"
 }
