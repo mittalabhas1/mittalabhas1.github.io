@@ -32,16 +32,53 @@ export const content = [
     </div>
     <div>
       In 2014 (junior year), I got this incredible opportunity to intern with a
-      start-up, Nikola Tech. This journey started with the ablest mentors
-      Vikrant Pogula and Abhishek Bhayana (co-founders of Nikola Tech) alongside
-      two dearest friends and elder brothers Vamshedhar (Vamshi) and Mehar. We
-      worked on Angular 1, Django and had a few microservices in expressjs. This
-      opportunity later converted into a pre placement offer. Given my love for
-      the team and the tech stack, I made a difficult choice to skip the
+      start-up, Nikola Tech. This journey started with the ablest mentors&nbsp;
+      <a
+        href="https://www.linkedin.com/in/vikrantpogula/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Vikrant Pogula
+      </a>{' '}
+      and{' '}
+      <a
+        href="https://www.linkedin.com/in/abhayana/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Abhishek Bhayana
+      </a>{' '}
+      (co-founders of Nikola Tech) alongside two dearest friends and elder
+      brothers{' '}
+      <a
+        href="https://www.linkedin.com/in/vamshedhar/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Vamshedhar
+      </a>{' '}
+      (Vamshi) and{' '}
+      <a
+        href="https://www.linkedin.com/in/mehar-pratap-sandhu-4ab087101/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Mehar
+      </a>
+      . We worked on Angular 1, Django and had a few microservices in expressjs.
+      This opportunity later converted into a pre placement offer. Given my love
+      for the team and the tech stack, I made a difficult choice to skip the
       university placement season, kicking off my career at Nikola Tech. For a
       small team of 3 engineers, we felt a great sense of pride in building a
-      product (StrawberryPOS, the restaurant OS) that catered to more than 300
-      restaurants across India.
+      product{' '}
+      <a
+        href="https://www.strawberrypos.com"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        (StrawberryPOS, the restaurant OS)
+      </a>{' '}
+      that catered to more than 300 restaurants across India.
     </div>
     <div
       className="image-wrapper mobile"
@@ -59,9 +96,39 @@ export const content = [
       It was really hard to say goodbye to this amazing team after spending
       almost three years. When I took a strategic decision to pursue my next
       stint, I came across this fitting opportunity through my friend and then
-      flatmate Prabhjot who introduced me to Flyhomes, Inc. In January 2017,
-      when I first met Stephen Lane a.k.a Steve and Tushar Garg (co-founders of
-      Flyhomes), they wanted to{' '}
+      flatmate{' '}
+      <a
+        href="https://www.linkedin.com/in/prabhjotrai/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Prabhjot
+      </a>{' '}
+      who introduced me to{' '}
+      <a
+        href="https://www.flyhomes.com"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Flyhomes, Inc.
+      </a>{' '}
+      In January 2017, when I first met{' '}
+      <a
+        href="https://www.linkedin.com/in/stephenmlane/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Stephen Lane
+      </a>{' '}
+      a.k.a Steve and{' '}
+      <a
+        href="https://www.linkedin.com/in/tushar-garg-a6837445/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Tushar Garg
+      </a>{' '}
+      (co-founders of Flyhomes), they wanted to{' '}
       <div className="image-wrapper left" style={{ marginTop: 20 }}>
         <img
           src={generateImageURL('flyhomes.jpg', slug)}
@@ -73,25 +140,156 @@ export const content = [
       pursuing web development and since then, there has been no turning back. I
       was hired as a Full Stack Web Engineer and currently I’m the tech lead of
       Customer Acquisitions at Flyhomes. We use Ruby-on-Rails (ROR), React and
-      Redux and I am really looking forward to working with Aditya (my current
-      manager) who recently joined the team. In April 2020, I completed three
-      years with Flyhomes and it has been a joyride so far. I have had my fair
-      share of ups and downs but as they all say, the pitfalls are soon
-      forgotten when everything turns out well in the end.
+      Redux and I am really looking forward to working with{' '}
+      <a
+        href="https://www.linkedin.com/in/adichaturvedi/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Aditya
+      </a>{' '}
+      (my current manager) who recently joined the team. In April 2020, I
+      completed three years with Flyhomes and it has been a joyride so far. I
+      have had my fair share of ups and downs but as they all say, the pitfalls
+      are soon forgotten when everything turns out well in the end.
     </div>
     <div className="image-wrapper mobile" style={{ marginTop: 20 }}>
-      <img
-        src={generateImageURL('flyhomes.jpg', slug)}
-        alt={'Flyhomes Team'}
-      />
+      <img src={generateImageURL('flyhomes.jpg', slug)} alt={'Flyhomes Team'} />
       <small>Team Flyhomes</small>
     </div>
   </div>,
-  'Over the past five years, I have had some amazing colleagues who are now my close friends (Chinmay, Vivek, Prashant, Mayank and Gurpreet) and incredible flatmates (Samveg, Hardik, Batra, Viraat, Pranjal, Tushar and Samvibhaw). Special mention to my mentor, Steve who although was a hard task master but always inspired confidence and thrived excellence in me. It was a delight working with you, Steve!',
+  <React.Fragment>
+    Over the past five years, I have had some amazing colleagues who are now my
+    close friends (
+    <a
+      href="https://www.linkedin.com/in/chinmayv/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Chinmay
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/vivekverma1993/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Vivek
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/prashant-shrivastava/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Prashant
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/gurpreet-singh-a3b78486/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Gurpreet
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/preetpal-singh-8b654b45/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Preetpal
+    </a>{' '}
+    and{' '}
+    <a
+      href="https://www.linkedin.com/in/mayank-katara-23879423/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Mayank
+    </a>
+    ) and incredible flatmates (
+    <a
+      href="https://www.linkedin.com/in/samveg/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Samveg
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/hardikuppal/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Hardik
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/tushar0837/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Batra
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/viraattiwari/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Viraat
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/pranjaldubey1993/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Pranjal
+    </a>
+    ,{' '}
+    <a
+      href="https://www.linkedin.com/in/tushar-saroch-454869134/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Tushar
+    </a>{' '}
+    and{' '}
+    <a
+      href="https://www.linkedin.com/in/samvibhaw-sinha-35ab7b64/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Jay
+    </a>
+    ). Special mention to my mentor, Steve who although was a hard task master
+    but always inspired confidence and thrived excellence in me. It was a
+    delight working with you, Steve!
+  </React.Fragment>,
   <div className="image-wrapper">
     <img src={generateImageURL('flattie.jpg', slug)} alt={'Flatties'} />
     <small>Noida Flatmates</small>
   </div>,
-  'Thanks to my parents, my younger brother (Prayas) and Aditi (who also edited this post) who stood beside me, always!',
+  <React.Fragment>
+    Thanks to my parents, my younger brother (
+    <a
+      href="https://www.linkedin.com/in/prayas26/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Prayas
+    </a>
+    ) and{' '}
+    <a
+      href="https://www.linkedin.com/in/guptaaditi1/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Aditi
+    </a>{' '}
+    (who also edited this post) who stood beside me, always!
+  </React.Fragment>,
   '- ABM'
 ];
