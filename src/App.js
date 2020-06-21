@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Home from './home';
-import Blog from './blog';
+import Stories from './blog';
 import Resume from './resume';
 
 class App extends Component {
   render() {
     return (
-      <HashRouter basename={'/'}>
+      <HashRouter basename="/">
         <Switch>
-          <Route exact path="/blog/stories">
-            <Blog />
-          </Route>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/stories">
+            <Stories />
           </Route>
           <Route exact path="/resume">
             <Resume />

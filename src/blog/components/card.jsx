@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import Image from './image';
 import './card.scss';
 
-class Home extends Component {
+class StoryCard extends Component {
   static propTypes = {
     title: PropTypes.string,
     details: PropTypes.string,
@@ -14,30 +15,22 @@ class Home extends Component {
   };
 
   render() {
-    const { title, details, coverImage, imgCredits, slug } = this.props;
+    const { title, details, coverImage, imgCredits, slug, publishDate } = this.props;
     return (
       <header className={coverImage ? 'story-card' : 'story-card-no-image'}>
-        {coverImage ? (
-          <div
-            className="bg"
-            style={{ backgroundImage: `url(${coverImage})` }}
-          />
-        ) : null}
-        {imgCredits ? (
-          <span className="image-credits">
-            Image Credits:{' '}
-            <a href={imgCredits} target="_blank" rel="noopener noreferrer">
-              {imgCredits}
-            </a>
-          </span>
-        ) : null}
+        <div className="image-wrapper">
+          <Image imgCredits={imgCredits} coverImage={coverImage} slug={slug} />
+        </div>
         <div className={coverImage ? 'container' : 'container-no-image'}>
           <section className={coverImage ? 'content' : 'content-no-image'}>
             <h1>{title}</h1>
             <p>{details}</p>
-            <Link to={slug}>
+            <Link to={`/stories/${slug}`}>
               Continue reading <i className="fas fa-arrow-right" />
             </Link>
+            <div className="publish-date">
+              {publishDate}
+            </div>
           </section>
         </div>
       </header>
@@ -45,4 +38,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default StoryCard;

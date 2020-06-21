@@ -3,170 +3,166 @@
   margin: 0;
 }
 
-body {
-  margin: 0;
-  font-family: 'Hind', 'Arial', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.container {
+.resume-container {
   width: 750px;
   margin: auto;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .header-inner-container {
+    padding: 20px 35px 10px;
+  }
+
+  .header {
+    background: rgb(106, 113, 130);
+    color: white;
+  }
+
+  .name {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .headline {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: -10px;
+  }
+
+  .panel {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .panel > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .panel i {
+    margin-right: 5px;
+  }
+
+  .body {
+    display: flex;
+  }
+
+  .left-container {
+    width: 65%;
+    font-size: 0.79rem;
+  }
+
+  .right-container {
+    border-left: 1px solid rgb(106, 113, 130);
+    width: 35%;
+    font-size: 0.79rem;
+  }
+
+  .inner-container {
+    padding: 15px 20px;
+  }
+
+  .inner-container.left {
+    padding-left: 35px;
+  }
+
+  .inner-container.right {
+    padding-right: 35px;
+  }
+
+  .job {
+    margin-bottom: 10px;
+  }
+
+  .job-title {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .job-subtitle {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .job-assignment-title {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .section-heading {
+    border-bottom: 1px solid;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: rgb(106, 113, 130);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .job-summary {
+    text-align: justify;
+  }
+
+  ul {
+    padding-inline-start: 20px;
+    margin-block-start: 8px;
+  }
+
+  li {
+    text-align: justify;
+  }
+
+  ul ul {
+    margin-top: 0;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .work-experience-section {
+    margin-bottom: 10px;
+  }
+
+  .education {
+    margin-bottom: 5px;
+  }
+
+  .degree {
+    font-weight: bold;
+    text-align: justify;
+  }
+
+  .university {
+    font-style: italic;
+    margin-right: 5px;
+  }
+
+  .activity {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    border: 1px solid #697082;
+    margin: 5px 5px 5px 0;
+    padding: 0 5px;
+    border-radius: 4px;
+    background: #697082;
+    color: white;
+  }
 }
 
-.header-inner-container {
-  padding: 20px 35px 10px;
-}
-
-.header {
-  background: rgb(106, 113, 130);
-  color: white;
-}
-
-.name {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.headline {
-  font-size: 15px;
-  text-align: justify;
-  margin-top: -10px;
-}
-
-.panel {
-  display: flex;
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  padding: 10px 0;
-}
-
-.panel > div {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-}
-
-.panel i {
-  margin-right: 5px;
-}
-
-.body {
-  display: flex;
-}
-
-.left-container {
-  width: 65%;
-  font-size: 0.79rem;
-}
-
-.right-container {
-  border-left: 1px solid rgb(106, 113, 130);
-  width: 35%;
-  font-size: 0.79rem;
-}
-
-.inner-container {
-  padding: 15px 20px;
-}
-
-.inner-container.left {
-  padding-left: 35px;
-}
-
-.inner-container.right {
-  padding-right: 35px;
-}
-
-.job {
-  margin-bottom: 10px;
-}
-
-.job-title {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.job-subtitle {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.job-assignment-title {
-  margin-top: 8px;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.section-heading {
-  border-bottom: 1px solid;
-  font-size: 16px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  color: rgb(106, 113, 130);
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.job-summary {
-  text-align: justify;
-}
-
-ul {
-  padding-inline-start: 20px;
-  margin-block-start: 8px;
-}
-
-li {
-  text-align: justify;
-}
-
-ul ul {
-  margin-top: 0;
-}
-
-.section {
-  margin-bottom: 20px;
-}
-
-.work-experience-section {
-  margin-bottom: 10px;
-}
-
-.education {
-  margin-bottom: 5px;
-}
-
-.degree {
-  font-weight: bold;
-  text-align: justify;
-}
-
-.university {
-  font-style: italic;
-  margin-right: 5px;
-}
-
-.activity {
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skill {
-  border: 1px solid #697082;
-  margin: 5px 5px 5px 0;
-  padding: 0 5px;
-  border-radius: 4px;
-  background: #697082;
-  color: white;
-}
