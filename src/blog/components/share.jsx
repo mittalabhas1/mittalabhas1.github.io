@@ -41,7 +41,7 @@ class Share extends Component {
   render() {
     const sites = shareSites(
       `${this.props.title}`,
-      'https://abhasmittal.com'
+      window ? window.location.href : 'https://abhasmittal.com'
     );
     const style = { flexDirection: this.props.direction };
     if (this.props.direction === 'row') {
