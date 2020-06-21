@@ -289,7 +289,7 @@ export const content = [
     >
       Aditi
     </a>{' '}
-    (who also edited this post) who stood beside me, always!
+    who stood beside me, always!
   </React.Fragment>,
   '- ABM'
 ];
