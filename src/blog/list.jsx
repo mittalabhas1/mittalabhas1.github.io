@@ -9,8 +9,8 @@ import './index.scss';
 
 class Stories extends Component {
   render() {
-    const title = 'Stories by Abhas';
-    const content = 'Personal Blog by Abhas Mittal';
+    const title = 'Blog by Abhas';
+    const content = 'Blog by Abhas Mittal';
     const image = process.env.PUBLIC_URL + '/images/logo.png';
     return (
       <div className="stories">

@@ -18,7 +18,7 @@ class App extends Component {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/stories">
+          <Route path="/blog">
             <Stories />
           </Route>
           <Route exact path="/resume">

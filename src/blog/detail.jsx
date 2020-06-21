@@ -19,7 +19,7 @@ class Story extends Component {
     if (story) {
       this.setState({ story });
     } else {
-      this.props.history.push('/stories');
+      this.props.history.push('/blog');
     }
   }
 
@@ -42,7 +42,7 @@ class Story extends Component {
           <meta name="description" content={details} />
           <meta name="twitter:description" content={details} />
           <meta property="og:description" content={details} />
-          <link rel="canonical" href={`https://abhasmittal.com/stories/${slug}`} />
+          <link rel="canonical" href={`https://abhasmittal.com/blog/${slug}`} />
         </Helmet>
         <div className="share-buttons-desktop">
           <Share title={title} />

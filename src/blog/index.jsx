@@ -10,14 +10,14 @@ class Blog extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/stories/:slug">
+        <Route exact path="/blog/:slug">
           <StoryDetail />
         </Route>
-        <Route exact path="/stories">
+        <Route exact path="/blog">
           <StoryList />
         </Route>
         <Route path="*">
-          <Redirect to="/stories" />
+          <Redirect to="/blog" />
         </Route>
       </Switch>
     );

@@ -3,7 +3,7 @@
 #stories-page {
   font: normal 14px 'Open Sans', sans-serif;
   background: white;
-  padding: 50px 50px;
+  padding: 20px 50px 50px;
   max-width: 1100px;
   width: 100%;
   margin: auto;
@@ -65,4 +65,8 @@
       margin: 0 10px;
     }
   }
+}
+
+.stories {
+  min-height: calc(100vh - 260px);
 }

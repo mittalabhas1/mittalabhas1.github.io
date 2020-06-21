@@ -32,9 +32,9 @@ export const socialContacts = [
   },
   {
     classname: 'fas fa-blog',
-    url: '/stories',
+    url: '/blog',
     target: '_self',
-    title: 'Stories'
+    title: 'Blog'
   }
 ];
 
