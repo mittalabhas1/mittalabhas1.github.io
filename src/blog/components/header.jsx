@@ -25,7 +25,7 @@ class Header extends Component {
               )}
             </span>
             <span className="blog-subheading">
-              I write code; drink coffee and sleep!
+              I drink coffee, write code; and sleep!
             </span>
           </div>
         </div>
