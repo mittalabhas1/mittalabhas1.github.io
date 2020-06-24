@@ -4,7 +4,10 @@
   "private": true,
   "homepage": "https://abhasmittal.com",
   "dependencies": {
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
+    "forcedomain": "^2.0.0",
+    "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
