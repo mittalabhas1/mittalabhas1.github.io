@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet';
 import { withRouter } from 'react-router-dom';
 
 import Image from './components/image';
@@ -11,13 +11,15 @@ import './detail.scss';
 
 class Story extends Component {
   state = {
-    story: null
+    story: null,
+    data: []
   };
 
   componentDidMount() {
-    const story = stories[this.props.match.params.slug];
+    const { slug } = this.props.match.params;
+    const story = stories[slug];
     if (story) {
-      this.setState({ story });
+      this.setState({ story, data: require(`./stories/${slug}.jsx`).content });
     } else {
       this.props.history.push('/blog');
     }
@@ -25,11 +27,16 @@ class Story extends Component {
 
   render() {
     if (!this.state.story) return null;
-    const { title, coverImage, imgCredits, slug, publishDate, details } = this.state.story;
+    const {
+      title,
+      coverImage,
+      imgCredits,
+      slug,
+      publishDate,
+      details
+    } = this.state.story;
 
-    const data = require(`./stories/${slug}.jsx`).content;
-
-    const helmetTitle = `${title} | Abhas Mittal`;
+    const helmetTitle = `${title} | Blog | Abhas Mittal`;
 
     return (
       <div id="story-page">
@@ -66,8 +73,12 @@ class Story extends Component {
                 slug={slug}
               />
             </div>
-            {data.map((datum, idx) => {
-              return <div className="story-block" key={`story-block-${slug}-${idx}`}>{datum}</div>;
+            {this.state.data.map((datum, idx) => {
+              return (
+                <div className="story-block" key={`story-block-${slug}-${idx}`}>
+                  {datum}
+                </div>
+              );
             })}
           </div>
         </div>

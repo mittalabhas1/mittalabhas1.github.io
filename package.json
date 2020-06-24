@@ -1,8 +1,8 @@
 {
-  "name": "mittalabhas1.github.io",
+  "name": "abhasmittal.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mittalabhas1.github.io",
+  "homepage": "https://abhasmittal.com",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "prop-types": "^15.7.2",
@@ -18,7 +18,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "CI=false NODE_ENV=production yarn build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d build",
+    "prepackage": "CI=false NODE_ENV=production yarn build",
+    "package": "rm -rf package && mkdir package && mv build package/ && cp package.json package/_package.json && cp .env package/ && cp server.js package/ && cp -r .ebextensions package/ && cp -r node_modules package/ && cd package && zip -1 -9 -q -r ~/Desktop/abhas-mittal-com-$(date +'%Y-%m-%d-%H-%M').zip .",
+    "postpackage": "rm -rf package"
   },
   "eslintConfig": {
     "extends": "react-app"
