@@ -6,12 +6,14 @@ var forceDomain = require('forcedomain');
 var port = process.env.PORT || 8081;
 var app = express();
 
-app.use(
-  forceDomain({
-    hostname: 'abhasmittal.com',
-    protocol: 'https'
-  })
-);
+if (process.env.NODE_ENV === 'production') {
+  app.use(
+    forceDomain({
+      hostname: 'abhasmittal.com',
+      protocol: 'https'
+    })
+  );
+}
 
 app.use(express.static(path.join(__dirname, 'build'), { index: false }));
 
