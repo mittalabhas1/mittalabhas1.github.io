@@ -1,12 +1,18 @@
 import React from 'react';
-import { render } from 'react-snapshot';
+import ReactDOM from 'react-dom';
 
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'font-awesome/css/font-awesome.min.css';
 
-render(<App />, document.getElementById('root'));
+const rootElem = document.getElementById('root');
+
+if (rootElem.hasChildNodes()) {
+  ReactDOM.hydrate(<App />, rootElem);
+} else {
+  ReactDOM.render(<App />, rootElem);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
