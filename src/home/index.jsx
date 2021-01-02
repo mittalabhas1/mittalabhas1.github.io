@@ -32,7 +32,7 @@ export const socialContacts = [
   },
   {
     classname: 'fas fa-blog',
-    url: '/blog',
+    url: '/blog/',
     target: '_self',
     title: 'Blog'
   }
@@ -60,6 +60,7 @@ class Home extends Component {
       </li>
     );
   };
+
   render() {
     return (
       // Design Credits: https://codepen.io/Mestika/pen/KVXVWE

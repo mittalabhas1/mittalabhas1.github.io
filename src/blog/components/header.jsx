@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header-container">
-        {/*<h1><Link to={'/blog'}>Stories</Link></h1>*/}
+        {/*<h1><Link to={'/blog/'}>Stories</Link></h1>*/}
         <div className="header">
           <img
             src={`${process.env.PUBLIC_URL}/images/logo.png`}
@@ -17,7 +17,7 @@ class Header extends Component {
           <div className="blog-name">
             <span className="blog-heading">
               {this.props.match.params.slug ? (
-                <Link to="/blog">Blog by Abhas Mittal</Link>
+                <Link to="/blog/">Blog by Abhas Mittal</Link>
               ): (
                 <React.Fragment>
                   Blog by <Link to={'/'}>Abhas Mittal</Link>

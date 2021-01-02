@@ -28,7 +28,7 @@ class StoryCard extends Component {
           <section className={coverImage ? 'content' : 'content-no-image'}>
             <h1>{title}</h1>
             <p>{details}</p>
-            <Link to={`/blog/${slug}`}>
+            <Link to={`/blog/${slug}/`}>
               Continue reading <i className="fas fa-arrow-right" />
             </Link>
             <div className="publish-date">
