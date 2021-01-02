@@ -22,10 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "CI=false NODE_ENV=production yarn build",
-    "deploy": "gh-pages -b master -d build",
-    "prepackage": "CI=false NODE_ENV=production yarn build",
-    "package": "rm -rf package && mkdir package && mv build package/ && cp package.json package/_package.json && cp .env package/ && cp server.js package/ && cp -r .ebextensions package/ && cp -r node_modules package/ && cd package && zip -1 -9 -q -r ~/Desktop/abhas-mittal-com-$(date +'%Y-%m-%d-%H-%M').zip .",
-    "postpackage": "rm -rf package"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
