@@ -91,8 +91,8 @@ class Home extends Component {
 
           <div className="profile-bio">
             <p>
-              Creative Senior Software Engineer with 5 years of experience.
-              Enthusiastic about developing forward-thinking solutions to
+              Engineering lead and product enthusiast.
+              Keen to develop forward-thinking solutions to
               tomorrow's productivity problems.
             </p>
           </div>
