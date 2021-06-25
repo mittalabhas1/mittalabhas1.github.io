@@ -17,4 +17,4 @@ export default async () => {
       }
     })();
   }, 5000);
-}
+};
